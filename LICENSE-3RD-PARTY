@@ -4,6 +4,14 @@ src/dpmmlearn/density.py
 src/dpmmlearn/probability.py
 src/dpmmlearn/dpmm.py
 src/dpmmlearn/utils.py
+demo/estimating_a_mixed_gaussian_distribution.ipynb
+demo/estimating_variance.ipynb
+tests/gmm.py
+tests/test_broadcast.py
+tests/test_density.py
+tests/test_dpmm.py
+tests/test_prior.py
+
 
 Copyright (c) 2016, Josh Meyers
 All rights reserved.
