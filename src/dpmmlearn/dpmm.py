@@ -4,6 +4,7 @@ import sys
 import numpy as np
 from sklearn.base import BaseEstimator, ClusterMixin
 from sklearn.utils.validation import check_array
+from scipy.special import gammaln
 
 from dpmmlearn.probability import Prior
 from dpmmlearn.utils import log_ewens_sampling_formula, pick_discrete
@@ -252,7 +253,7 @@ class DPMM(BaseEstimator, ClusterMixin):
         return picked
 
     def _calc_posterior(self, X):
-        v = log_ewens_sampling_formula(self.alpha, self.n_labels_)
+        v = log_ewens_sampling_formula(self.alpha, self.n_labels_) - gammaln(len(self.n_labels_) + 1)
         for i, theta in enumerate(self.thetas_):
             v = v + self.prob.lnprior(theta).item()
             idx = self.labels_ == i
