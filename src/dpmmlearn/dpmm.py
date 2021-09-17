@@ -47,7 +47,7 @@ class DPMM(BaseEstimator, ClusterMixin):
     verbose : bool, default=True
         Controls the verbosity: the higher, the more messages.
 
-        - True : the computation time for each fold and parameter candidate is displayed;
+        - True : created label and deleted label are displayed;
         - False : nothing is displayed;
 
     random_state : int, default=0
@@ -263,7 +263,7 @@ class DPMM(BaseEstimator, ClusterMixin):
 
     def fit(self, X, y=None):
         """
-        Perform clustering on `X` and returns cluster labels.
+        Perform clustering on `X`.
 
         Parameters
         ----------
