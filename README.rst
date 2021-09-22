@@ -134,5 +134,5 @@ Test
     python setup.py test
 
 .. |image0| image:: https://img.shields.io/badge/dynamic/json.svg?label=version&colorB=5f9ea0&query=$.version&uri=https://raw.githubusercontent.com/ground0state/dpmmlearn/main/package.json&style=plastic
-.. |image1| image:: https://static.pepy.tech/personalized-badge/dpmmlearn?period=month&units=international_system&left_color=grey&right_color=blue&left_text=Downloads
+.. |image1| image:: https://static.pepy.tech/personalized-badge/dpmmlearn?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads
  :target: https://pepy.tech/project/dpmmlearn
